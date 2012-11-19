@@ -1622,7 +1622,7 @@
                     var selected = element.find(":selected");
                     // a single select box always has a value, no need to null check 'selected'
                     if ($.isFunction(callback))
-                        callback({id: selected.attr("value"), text: selected.text()});
+                        callback({id: selected.attr("value"), text: selected.text(), element:selected});
                 };
             }
 
